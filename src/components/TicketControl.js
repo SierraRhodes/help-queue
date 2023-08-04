@@ -6,7 +6,9 @@ class TicketControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      currentPage: 1,
       formVisibleOnPage: false
+      
     };
 }
   
