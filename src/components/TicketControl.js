@@ -4,7 +4,6 @@ import TicketList from './TicketList';
 import TicketDetail from './TicketDetail';
 import EditTicketForm from './EditTicketForm';
 
-
 class TicketControl extends React.Component {
   constructor(props) {
     super(props);
@@ -20,7 +19,8 @@ handleClick = () => {
   if (this.state.selectedTicket != null) {
     this.setState({
       formVisibleOnPage: false,
-      selectedTicket: null
+      selectedTicket: null,
+      editing: false
     });
   } else {
     this.setState(prevState => ({
